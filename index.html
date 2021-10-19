@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=UTF-8>
+  <title>Web Alonso Flores</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+  <div class="main_page">
+
+    <div class="page_header floating_element">
+      <span class="section_header">
+        <h1>Falso AEMET</h1>
+      </span>
+    </div>
+
+    <div>
+    <form method="GET" action="http://www.aemet.es/es/buscador" target="_blanck">
+        Seleccione la localidad:
+        <input type="radio" id="fuenlabrada" name="str" value="fuenlabrada">
+        <label for="fuenlabrada">FUENLABRADA</label>
+        <input type="radio" id="mostoles" name="str" value="mostoles">
+        <label for="mostoles">MOSTOLES</label>
+        <input type="radio" id="leganes" name="str" value="leganes">
+        <label for="leganes">LEGANES</label>
+        <input type="radio" id="alcorcon" name="str" value="alcorcon">
+        <label for="alcorcon">ALCORCON</label>
+        <input type="hidden" name="modo" value="and" />
+        <input type="hidden" name="orden" value="n" />
+        <input type="hidden" name="tipo" value="sta" /><br>
+        <input type="submit" value="BUSCAR" title="Buscar" alt="Buscar" />
+    </form>
+    </div>
+  </div>
+
+  </div>
+</body>
+
+</html>
